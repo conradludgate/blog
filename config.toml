@@ -1,0 +1,4 @@
+baseURL = "https://conradludgate.com/"
+languageCode = "en-gb"
+title = "Conrad Ludgate"
+theme = "noteworthy"

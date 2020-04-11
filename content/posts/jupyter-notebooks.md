@@ -1,6 +1,7 @@
 +++
 title = "Jupyter Notebooks and the Remote Kernel"
 date = "2020-01-10"
+summary = "My experimentations with Jupyter"
 +++
 
 Before I get into any tech, some background into my current situation.

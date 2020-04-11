@@ -1,7 +1,6 @@
 +++
 title = "Jupyter Notebooks and the Remote Kernel"
 date = "2020-01-10"
-draft = true
 +++
 
 Before I get into any tech, some background into my current situation.

@@ -145,7 +145,7 @@ And they each have an update function.
 In Yew's case, everything is a little more specific, however it's not too verbose.
 It would be similar situation if you were using TypeScript with React.
 
-This is great for me. I'm not a fan of JS but I like React. Yew let's me use the same
+This is great for me. I'm not a fan of JS but I like React. Yew lets me use the same
 concepts as React but in a language I am more fond of.
 
 ## What are the downsides of Yew?

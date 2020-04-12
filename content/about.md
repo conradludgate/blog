@@ -1,7 +1,8 @@
 +++
 title = "About"
+date = "2020-04-11"
+meta = "false"
 type = "section"
-date = "2020-11-04"
 +++
 
 # Who am I?

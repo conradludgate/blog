@@ -8,7 +8,7 @@ tags = ["dev", "rust", "yew", "react", "front-end"]
 I recently discovered a really cool front-end framework written in [Rust](https://rust-lang.org/) called [Yew](https://yew.rs/).
 I feel like it's a spiritual cross between the functional language [Elm](https://elm-lang.org/) and [React](https://reactjs.org/).
 
-This is a long post, so I'm going to provide a list contents
+This is a long post, so I'm going to provide a list of contents
 - [Background](#background)
   - [How does React work?](#how-does-react-work)
 - [How does Yew differ?](#how-does-yew-differ)

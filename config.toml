@@ -28,10 +28,8 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
     # Programming
     github = "https://github.com/conradludgate"
 
-    ackee_analytics_src = "https://api.conradludgate.com/api.js"
-    ackee_server = "https://api.conradludgate.com"
-    ackee_domain_id = "97fd72f0-e2a9-44e1-a3fd-1ef2d3611b58"
-
+    analytics_src = "https://api.conradludgate.com/umami.js"
+    website_id = "af63e513-329a-4366-8411-729a44ed643c"
 
 # Menu links along the sidebar navigation.
 [[menu.main]]

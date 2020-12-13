@@ -29,7 +29,7 @@ The Fast Fourier Transform is a very efficient algorithm to compute the Discrete
 
 ### Wait, what is the discrete fourier transform?
 
-I've skipped a bit about the fourier transform, but it's defined as the following complex integral from -infinity to +infinity.
+I've skipped a bit about the fourier transform, but it's defined as the following complex integral.
 
 ![fourier transform integral](/fft/ft.svg)
 
@@ -39,9 +39,7 @@ Instead, we can turn the integral into a finite summation
 
 ![discrete fourier transform](/fft/dft.svg)
 
-and the same properties will apply, of course with some accuracy loss, but that's to be expected with discrete data.
-
-The issue with this formula, if used naively, is that it will have a complexity of `O(n^2)`. This means that the run time will quadruple as the input length doubles. This is a big deal for sound processing. Typical audio is sampled at 44,100 times per second. This would need 1,944,810,000 calculations for analysing just a second of audio.
+and the same properties will apply. The issue with this formula is that it will have a complexity of `O(n^2)`. This means that the run time will quadruple as the input length doubles. This is a big deal for sound processing. Typical audio is sampled at 44,100 times per second. This would need 1,944,810,000 calculations for analysing just a second of audio.
 
 However, because of the symmetric properties of the fourier transform, there happens to be a clever trick we can do. We can split the input, apply the DFT to each half, then combine them. We can do the same trick to these smaller signals. This takes the complexity all the way down to `O(n log n)`. This theoretically brings the calculations required for the 44100 sample signal down to ~ 680,000. That's almost 3000 times faster.
 

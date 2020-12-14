@@ -54,19 +54,24 @@ def fft(xs):
         return xs
 
     # Split the input in half
-    es = [xs[i] for i in range(0, n, 2)]
-    os = [xs[i] for i in range(1, n, 2)]
+    evens = []
+    odds  = []
+    for k, x in enumerate(xs):
+        if k % 2 == 0:
+            evens.append(x)
+        else:
+            odds.append(x)
 
     # Apply smaller FFTs
-    es = fft(es)
-    os = fft(os)
+    evens = fft(evens)
+    odds  = fft(odds)
 
     # Combine FFTs
     output = [0] * n
-    for k, (e, o) in enumerate(zip(es, os)):
-        z = exp(-2j * pi * k / n)
-        output[k]        = e + z * o
-        output[k + n//2] = e - z * o
+    for k in range(n//2):
+        z = np.exp(-2j * np.pi * k / n)
+        output[k]        = evens[k] + z * odds[k]
+        output[k + n//2] = evens[k] - z * odds[k]
 
     return output
 ```
